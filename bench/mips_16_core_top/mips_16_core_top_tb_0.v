@@ -79,7 +79,7 @@ module mips_16_core_top_tb_0_v;
 	
 	task test1;
 		begin
-			$readmemb("../bench/mips_16_core_top/test1.prog",uut.IF_stage_inst.imem.rom);
+			$readmemb("../../bench/mips_16_core_top/test1.prog",uut.IF_stage_inst.imem.rom);
 			$display("rom load successfully\n");
 			$display("running test1\n");
 			sys_reset;
@@ -101,7 +101,7 @@ module mips_16_core_top_tb_0_v;
 	
 	task test2;
 		begin
-			$readmemb("../bench/mips_16_core_top/test2.prog",uut.IF_stage_inst.imem.rom);
+			$readmemb("../../bench/mips_16_core_top/test2.prog",uut.IF_stage_inst.imem.rom);
 			$display("rom load successfully\n");
 			$display("running test2\n");
 			$display("multiply R3=R1*R2\n");
